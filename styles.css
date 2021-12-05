@@ -1,0 +1,177 @@
+/*
+   XXAdd Open Sans font to entire body
+   XXBackground color
+   XX#69696a for the colors that look gray (all text, links, & description border)
+   XXMake black #000-(buttons & chirpus inc.)
+   XXButton text- #FFF
+-Round Buttons!
+   XXRemove text-decoration from anchor tags.
+   XXBorder-left of description
+   XXFooter position fixed
+   XXFooter background color: rgba(247, 193, 162, 0.7)
+
+-BORDER RADIUS for circle design
+*/
+body{
+   font-family: Open Sans;
+   background-color: #f9fafc;
+   margin: 0px;
+}
+
+.blacktext {
+   color: #000;
+   font-weight: bold;
+}
+
+.footer{
+   display: inline-flex;
+   background-color: rgba(247, 193, 162, 0.7);
+   position: fixed;
+   width: 100vw;
+   bottom: 0;
+   margin: 0;
+   padding: 10px 25px;
+}
+.linkcontainer{
+   padding: 0px 30px;
+   margin-left: auto;
+   box-sizing: border-box; 
+}
+
+p{
+   color:#69696a;
+   border-left: solid 4px #69696a;
+   padding: 0px 10px 0px 10px;
+   width: 93vw;
+}
+
+a{
+   text-decoration: none;
+   color: #69696a;
+}
+
+.header{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   top: 0;
+   right: 0;
+   margin: 15px 15px 0px 15px;
+}
+
+.headlinks{
+   padding: 5px 0px 5px 0px;
+}
+
+h1{
+   font-size: 35px;
+   margin: 10px 0px 0px 0px;
+}
+
+.maintext{
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   margin: 0px 20px 0px 15px;
+   width: 95vw;
+}
+
+.navcontainer{
+   display: flex;
+   flex-direction: column;
+   margin: 0px 20px 0px 0px;
+   padding: 0px 10px 10px 0px;
+}
+
+.links{
+   display: inline;
+   padding: 10px;
+}
+
+button {
+   font-family: Open Sans;
+   font-size: 15px;
+   color: #FFF;
+   background-color: #000;
+   border-radius: 25px;
+   width: 100%;
+   padding: 10px 10px;
+   margin: 0px 20px 0px 0px;
+}
+
+@media only screen and (min-width: 768px){
+   .header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .navcontainer{
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      align-items: center;
+   }
+
+   .headlinks{
+      padding: 0px 0px 0px 15px;
+   }
+
+   .maintext{
+      margin-top: 115px;
+      width: 50vw;
+   }
+
+   p{
+      width: 50vw;
+   }
+
+   .circlecontainer{
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      background-color: none;
+      border: none;
+      margin-left: 50%;
+      height: 100%;
+      width: 100%;
+   }
+
+   #circle1{
+      position: fixed;
+      top: 25%;
+      right: 100px;
+      height: 250px;
+      width: 250px;
+      background-color: rgba(247, 136, 167, 0.6);
+      border-radius: 50%;
+      z-index: 1;
+   }
+
+   #circle2{
+      position: fixed;
+      top: 45%;
+      right: 10px;
+      height: 200px;
+      width: 200px;
+      background-color: rgba(247, 193, 162, 0.7) ;
+      border-radius: 50%;
+      z-index: 3;
+   }
+
+   #circle3{
+      position: fixed;
+      top: 30%;
+      right: 10px;
+      height: 150px;
+      width: 150px;
+      background-color: rgba(207, 130, 213, 0.6);
+      border-radius: 50%;
+      z-index: 2;
+   }
+
+   .sidebyside{
+      display: flex;
+      flex-wrap: wrap;
+   }
+}
